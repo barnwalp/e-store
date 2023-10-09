@@ -3,7 +3,7 @@ import { UserButton } from "@clerk/nextjs";
 
 export default function Page() {
 	return (
-		<div>
+		<div className="">
 			<h1>Page</h1>
 			<Button>Test</Button>
 			{/*}<UserButton afterSignOutUrl="/" />{*/}
