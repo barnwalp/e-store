@@ -6,7 +6,7 @@ export default function Page() {
 		<div className="">
 			<h1>Page</h1>
 			<Button>Test</Button>
-			{/*}<UserButton afterSignOutUrl="/" />{*/}
+			<UserButton afterSignOutUrl="/" />
 		</div>
 	);
 }
