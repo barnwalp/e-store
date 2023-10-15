@@ -1,3 +1,4 @@
+"use client"
 import { useStoreModal } from "@/hooks/use-store-modal"
 import { Modal } from "@/components/ui/modal";
 
@@ -11,6 +12,7 @@ export const StoreModal = () => {
 		isOpen={storeModal.isOpen}
 		onClose={storeModal.onOpen}
 	>
+		Future create store Form
 	</Modal>
  )
 }
