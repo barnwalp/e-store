@@ -1,5 +1,6 @@
 import { ClerkProvider } from "@clerk/nextjs"
 import './globals.css';
+import { ModalProvider } from "@/providers/modal-provider";
 
 export const metadata = {
   title: 'Next.js',
@@ -15,6 +16,7 @@ export default function RootLayout({
 		<ClerkProvider>	
 			<html lang="en">
 				<body className="bg-red-50">
+					<ModalProvider />
 					{children}
 				</body>
 			</html>
