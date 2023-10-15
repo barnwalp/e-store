@@ -27,6 +27,8 @@ export const Modal: React.FC<ModalProps> = ({
 		}
 	})
 	return (
+		// isOpen and onOpenChange are defined in the radix ui
+		// in DialogProps
 		<Dialog open={isOpen} onOpenChange={onChange}>
 			<DialogContent>
 				<DialogHeader>
