@@ -8,19 +8,23 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
+  DialogTrigger,
 } from "@/components/ui/dialog"
 
 import { Button } from "@/components/ui/button"
 
-type StoreModalProps = {
+type DialogModalProps = {
 	title: string;
 	description: string;
 }
 
-export const StoreModal = (props: StoreModalProps):React.JSX.Element => {
+export const DialogModal = (props: DialogModalProps):React.JSX.Element => {
 	return (
 		<>
 			<Dialog>
+				<DialogTrigger asChild>
+					<Button>Create Store</Button>
+				</DialogTrigger>
 				<DialogContent className="sm:max-w-md">
 					<DialogHeader>
 						<DialogTitle>{props.title}</DialogTitle>
